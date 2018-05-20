@@ -50,11 +50,11 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  array.map do |word|
+  new_array = []
+  array.each do |word|
     if word.start_with?("a")
-      word
-    else
-      return
+      new_array.push(word)
     end
   end
+  new_array
 end
