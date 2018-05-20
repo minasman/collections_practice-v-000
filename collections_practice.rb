@@ -63,3 +63,7 @@ def sum_array(array)
   my_sum = array.inject {|sum, n| sum + n}
   my_sum
 end
+
+def add_s(array)
+  array.each_with_index.collect {|element, index| element + "s" if index ! = 1}
+end
